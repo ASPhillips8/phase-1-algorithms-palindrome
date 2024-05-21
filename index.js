@@ -2,18 +2,14 @@ function isPalindrome(word) {
   let reverseWord = word.split("").reverse().join("")
   if (reverseWord === word) {
     return true
-  } else {
-    return false
-  }
+  } else false
 }
+
   // Write your algorithm here
   // Make a function that test if words are palindrom. same forward and backwards. 
-  // it going to take a string
-  // return true if match
-  // return false if not
-  // string is all lowercase and no special characters
-  // need to reserve string and check to original
-  // split('').reverse().join('')
+  // first take a string and which it around to get it reverse
+  // store reversed string in variable
+  // check variable equals given word
 
   // expect testing mom to consol log true
   // expect testing toast to consol log false
@@ -24,12 +20,19 @@ function isPalindrome(word) {
 /* 
   Add your pseudocode here
 // *
-  // string and use .split("")
-  // use reverse method on result .reverse()
-  // just join method on result .join("")
-  // set to variable let = revWord
-  // if (revWord = word) return true
-
+  // reverse method only works on an array***
+  // word = "racecar"
+  // take a string and separate letters
+  // expect [r, a, c, e, c, a, r] 
+  // characterArray = word.split("")
+  // need to reverse order of characters.
+  // reversedArray = characterArray.reverse()
+  // need to join array elements to a single string
+  // reverseArray.join("")
+  // reverseWord = reverseArray.join("")
+  // if (reverseWord = word) 
+    return true
+    else return false 
 
 
 
